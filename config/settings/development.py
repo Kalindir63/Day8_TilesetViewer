@@ -1,4 +1,4 @@
-from .base import *
+from .common import *
 
 SECRET_KEY = 'dev'
 
@@ -7,10 +7,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Static Files dir
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = PROJECT_ROOT / 'staticfiles'
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = PROJECT_ROOT / 'media'
 
 MEDIA_URL = '/media/'
